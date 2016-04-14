@@ -1,0 +1,12 @@
+<ul class="demo-list-three mdl-list">
+  {{#each model as |topic|}}
+    <li class="mdl-list__item mdl-list__item--three-line">
+      <span class="mdl-list__item-primary-content">
+        <span>{{topic.title}}</span>
+        <span class="mdl-list__item-text-body">
+          {{topic.description}}
+        </span>
+      </span>
+    </li>
+  {{/each}}
+</ul>

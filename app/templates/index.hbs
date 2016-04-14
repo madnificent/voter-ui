@@ -1,12 +1,15 @@
-<ul class="demo-list-three mdl-list">
-  {{#each model as |topic|}}
-    <li class="mdl-list__item mdl-list__item--three-line">
-      <span class="mdl-list__item-primary-content">
-        <span>{{topic.title}}</span>
-        <span class="mdl-list__item-text-body">
-          {{topic.description}}
+<div class="container">
+  <ul class="demo-list-three mdl-list">
+    {{#each topics as |topic|}}
+      <li class="mdl-list__item mdl-list__item--three-line">
+        <span class="mdl-list__item-primary-content">
+          <span class="mdl-badge" data-badge={{topic.votes}}>{{topic.title}}</span>
+          <span class="mdl-list__item-text-body">
+            {{topic.description}}
+          </span>
         </span>
-      </span>
-    </li>
-  {{/each}}
-</ul>
+      </li>
+    {{/each}}
+    {{new-topic-box}}
+  </ul>
+</div>

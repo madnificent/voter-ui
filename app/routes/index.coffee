@@ -2,7 +2,7 @@
 
 IndexRoute = Ember.Route.extend
   model: () ->
-    @store.query('topic', { sort: "votes" })
+    @store.findAll('topic')
 
 
 `export default IndexRoute`

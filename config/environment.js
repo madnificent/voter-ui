@@ -12,12 +12,13 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-    sassOptions: {
-      includePaths: ['bower_components/material-design-lite/src']
-    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    sassOptions: {
+      includePaths: ['bower_components/materialize/sass']
     }
   };
 

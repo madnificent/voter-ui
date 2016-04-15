@@ -1,15 +1,12 @@
 <div class="container">
-  <ul class="demo-list-three mdl-list">
-    {{#each topics as |topic|}}
-      <li class="mdl-list__item mdl-list__item--three-line">
-        <span class="mdl-list__item-primary-content">
-          <span class="mdl-badge" data-badge={{topic.votes}}>{{topic.title}}</span>
-          <span class="mdl-list__item-text-body">
-            {{topic.description}}
-          </span>
-        </span>
-      </li>
-    {{/each}}
-    {{new-topic-box}}
-  </ul>
+  {{#md-collection content=topics as |topic|}}
+    <div class="collection-item">
+      <span class="title">
+        {{topic.title}}
+        {{md-badge text=topic.votes}}
+      </span>
+      <p>{{topic.description}}</p>
+    </div>
+  {{/md-collection}}
+  {{new-topic-box}}
 </div>

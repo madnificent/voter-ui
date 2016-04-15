@@ -1,16 +1,10 @@
-<li class="mdl-list__item mdl-list__item--three-line">
-  <span class="mdl-list__item-primary-content">
-    <div class="">
-      {{mdl-textfield label="Title" value=topic.title}}
-    </div>
-    <div class="">
-      <span class="mdl-list__item-text-body">
-        {{mdl-textarea value=topic.description label="Description"}}
-      </span>
-    </div>
-    <div class="">
-      {{mdl-textfield value=topic.votes type="number" label="Vote count"}}
-    </div>
-    {{#mdl-button action="create"}} Create {{/mdl-button}}
+<div class="collection-item">
+  <span class="title">
+    {{md-input value=topic.title label="Title"}}
   </span>
-</li>
+  <p>{{md-input value=topic.votes label="Votes" type="number"}}</p>
+  <p>
+    {{md-textarea label="Description" value=topic.description}}
+    {{#md-btn action="create"}} Create {{/md-btn}}
+  </p>
+</div>

@@ -8,5 +8,4 @@ IndexController = Ember.Controller.extend
     console.log("#{a} vs #{b} ")
     if a < b then 1 else -1
 
-
 `export default IndexController`

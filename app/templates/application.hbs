@@ -1,5 +1,9 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
+{{#if session.isAuthenticated}}
+  {{mu-logout}}
+{{/if}}
+
 {{outlet}}
 
 {{!-- ember-cli-materialize modal container --}}

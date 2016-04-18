@@ -44,6 +44,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-modal-dialog": "0.8.3",
     "ember-mu-login": "1.4.2",
+    "ember-mu-registration": "1.0.1",
     "ember-new-computed": "1.0.3",
     "ember-radio-button": "1.0.7",
     "ember-resolver": "^2.0.3",
